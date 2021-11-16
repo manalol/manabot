@@ -1,9 +1,18 @@
-2021-11-15 08:34:13,835:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
-2021-11-15 08:34:13,836:INFO:discord.client: logging in using static token
-2021-11-15 08:34:13,957:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
-2021-11-15 08:34:14,065:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-fpl0",{"micros":93939,"calls":["discord-sessions-blue-prd-2-67",{"micros":93235,"calls":["start_session",{"micros":53932,"calls":["api-prd-main-3j5d",{"micros":47656,"calls":["get_user",{"micros":5255},"add_authorized_ip",{"micros":1912},"get_guilds",{"micros":6949},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":12842,"calls":[]}]}]}] (Session ID: 0d96e9d83d5aa1cfe7d15888e6b76255).
-2021-11-15 08:34:16,075:INFO:discord: Manabot launched succesfully
-2021-11-15 08:34:16,076:INFO:discord: Attempting to load the info extension
-2021-11-15 08:34:16,077:INFO:discord: Attempting to load the fun extension
-2021-11-15 08:34:16,078:INFO:discord: Attempting to load the help extension
-2021-11-15 08:34:16,079:INFO:discord: Loaded 3 extension(s) in 0.003543376922607422 seconds
+2021-11-16 03:34:54,331:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-11-16 03:34:54,332:INFO:discord.client: logging in using static token
+2021-11-16 03:34:54,498:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-11-16 03:34:54,667:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-jw3c",{"micros":154048,"calls":["discord-sessions-green-prd-2-135",{"micros":143157,"calls":["start_session",{"micros":116780,"calls":["api-prd-main-05vx",{"micros":67117,"calls":["get_user",{"micros":5965},"add_authorized_ip",{"micros":6488},"get_guilds",{"micros":16267},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":577,"calls":[]}]}]}] (Session ID: 49249be5d8bc9f499c1e4b063572c443).
+2021-11-16 03:34:56,678:INFO:discord: Manabot launched succesfully
+2021-11-16 03:34:56,678:INFO:discord: Attempting to load the info extension
+2021-11-16 03:34:56,680:INFO:discord: Attempting to load the fun extension
+2021-11-16 03:34:56,680:INFO:discord: Attempting to load the development extension
+2021-11-16 03:34:56,681:INFO:discord: Attempting to load the help extension
+2021-11-16 03:34:56,682:INFO:discord: Loaded 4 extension(s) in 0.004381418228149414 seconds
+2021-11-16 03:35:35,750:INFO:discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2021-11-16 03:35:35,750:INFO:discord.client: Got a request to RESUME the websocket.
+2021-11-16 03:35:35,821:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-11-16 03:35:35,847:INFO:discord.gateway: Shard ID None has successfully RESUMED session 49249be5d8bc9f499c1e4b063572c443 under trace ["gateway-prd-main-k8rx",{"micros":4249,"calls":["discord-sessions-green-prd-2-135",{"micros":37}]}].
+2021-11-16 03:37:46,313:INFO:discord.client: Cleaning up tasks.
+2021-11-16 03:37:46,313:INFO:discord.client: Cleaning up after 1 tasks.
+2021-11-16 03:37:46,314:INFO:discord.client: All tasks finished cancelling.
+2021-11-16 03:37:46,315:INFO:discord.client: Closing the event loop.

@@ -1,5 +1,6 @@
 import discord
 import logging
+import json
 from discord.ext import commands
 
 class Information(commands.Cog, name="Info"):
@@ -34,22 +35,19 @@ class Information(commands.Cog, name="Info"):
         Information about the bot
         """
         embed = discord.Embed(title="About manabot")
-       
+        embed.colour = discord.Colour.green()
         
         embed.description = f"""
-        Manabot is a multi-functional discord bot owned and maintained by ``mana#3954``
+        Manabot is a multi-functional discord bot owned and maintained by ``{await self.bot.fetch_user(self.bot.settings['owner_id'])}``
         This bot is designed for the sole purpose of allowing myself to experiment and get used to the discord.py library.
         """
         value = f"""
         Guilds: ``{len(self.bot.guilds)}``
         Commands: ``{len(self.bot.commands)}``
-        Version: ``1.0``
+        Version: ``{self.bot.settings['version']}``
         """
         embed.add_field(name="Status", value=value)
-        embed.add_field(name="Additional Information", value= """
-        Automate about information, add development commands, 
-        add exception handling and integrate github.
-        """)
+        embed.add_field(name="Changelog", value=f"{self.bot.settings['changelog']}")
             
         await ctx.send(embed=embed)
     

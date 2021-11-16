@@ -1,5 +1,7 @@
 import discord
 import logging
+import json
+
 from utilities.handling import ErrorParser
 from manabot import Manabot
 
@@ -22,9 +24,10 @@ def run_bot():
     """
     
     run_logging()
-    with open("token.txt", 'r') as t:
-        bot = Manabot("mana, ")
-        token = t.read()
+    with open("settings.json", "r") as s:
+        settings = json.load(s)
+        bot = Manabot(settings['prefix'])
+        token = settings['token']
         bot.run(token)
         
         

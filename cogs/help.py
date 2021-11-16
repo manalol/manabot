@@ -45,8 +45,8 @@ class HelpCommand(commands.MinimalHelpCommand):
                 name = cog.qualified_name if cog != None else "Uncategorized"
                 value = (
                     f'{cog.description}\n``{cmds}``' if cog and cog.description else
-                    f'No description.``\n{cmds}``' if cmds else
-                    f'No description or commands.'
+                    f'commands that fall under no category``\n{cmds}``' if cmds else
+                    f'commands that fall under no category\n``No commands``'
                 )
                 embed.add_field(name=name, value=value, inline=True)    
             
